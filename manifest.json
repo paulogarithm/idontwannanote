@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "I dont want to note !!!",
+    "version": "1.42",
+    "permissions": [
+        "webRequest",
+        "activeTab",
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://intra.epitech.eu/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://intra.epitech.eu/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
